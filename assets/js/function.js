@@ -1,5 +1,13 @@
 
 
+
+// time counter
+
+
+
+
+
+
 const timerFunction = (curTime, date, time, interVal = null,audio) => {
 
     const setTime = new Date(date + ' ' + time);
@@ -21,7 +29,21 @@ const timerFunction = (curTime, date, time, interVal = null,audio) => {
  
 }
 
-// progress bar 
+
+
+
+
+
+
+
+// progress bar
+
+
+
+
+
+
+
 
 const progressBar = (date, time, interval = null,curTime) => {
 
@@ -35,7 +57,6 @@ const progressBar = (date, time, interval = null,curTime) => {
         return Final;
 
     }else if(timeChange <= 0){
-        // clearInterval(interval)
             return `100%`
     }
     
@@ -50,12 +71,24 @@ const progressBar = (date, time, interval = null,curTime) => {
 
 
 
-// set ls data
+
+
+
+// set alert
+
+
+
+
 
 
 const setAlert =(msg,type='danger')=>{
     return `<h5 class="alert alert-${type} text-center">${msg}</h5>`
 }
+
+
+// set ls data
+
+
 
 
 
@@ -69,11 +102,23 @@ return localStorage.setItem(key,JSON.stringify(data));
 }
 
 
+
+
+// get ls data
+
+
+
+
 const getLsData = (key)=>{
     if(localStorage.getItem(key)){
         return JSON.parse(localStorage.getItem(key));
     }
 }
+
+
+
+
+// update Ls Data  
 
 
 const updateLsData = (key,array) => {

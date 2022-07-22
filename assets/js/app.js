@@ -4,11 +4,32 @@ const audio_one = document.getElementById('audio')
 const output = document.getElementById('output');
 const msg = document.querySelector('.msg');
 
+
+
+// set interval
+
+
+
+
       
 let setInt = setInterval(() => {
    
     getAllTodo()
 }, 1000);
+
+
+
+
+
+
+// display list item
+
+
+
+
+
+
+
 
 const getAllTodo = () => {
     let allData = getLsData('todo');
@@ -57,6 +78,20 @@ getAllTodo();
 
 
 
+
+
+
+
+// form submit
+
+
+
+
+
+
+
+
+
 date_time.addEventListener('submit', (e) => {
     e.preventDefault();
     let curTime = {
@@ -82,6 +117,16 @@ date_time.addEventListener('submit', (e) => {
     }
         
 })  
+
+
+
+
+
+
+
+// data delete
+
+
 
 
 output.onclick = (e) => {
