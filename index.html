@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row d-flex justify-content-center mt-5">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-header py-2 text-center bg-primary text-white shadow-sm">
+                        <h1>Todo App</h1>
+                    </div>
+                    <div class="card-body text-center">
+                        <form id="date_time" class="d-flex border border-2 border-primary  justify-content-between rounded rounded-3 shadow-sm">
+                            <input class="border border-primary border-top-0 border-bottom-0 border-start-0 border-start-1 p-2 w-75" type="text" name="order" id="" placeholder="Order Name">
+                            <input class="border border-primary border-top-0 border-bottom-0 border-start-0 border-start-1 p-2 w-75" type="text" name="clint" id="" placeholder="Clint Name">
+                            <input class="border border-primary border-top-0 border-bottom-0 border-start-0 border-start-1 p-2 w-100" type="date" name="date" id="">
+                            <input  class="border border-primary border-top-0 border-bottom-0 border-start-0 border-start-1 p-2 w-100" type="time" name="time" id="">
+                            <button class="btn btn-primary rounded-0" type="submit">Add</button>
+                            </form>
+
+                        <div class=" py-1 rounded-0 border border-3 border-warning mt-3 border-bottom-0 border-end-0 border-start-0" id="output">
+                            <div class="msg text-center"></div>
+                            <ul class="result w-100 text-center d-flex align-items-center flex-column m-0 p-0 list-group">
+                              <audio id="audio" src="./assets/audio/mixkit-retro-game-emergency-alarm-1000.wav"></audio>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/function.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
